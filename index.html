@@ -9,7 +9,8 @@
 </head>
 <body class="inter">
     <!-- Header -->
-    <header class="bg-[#1A0B2E] w-100% h-20">
+    <header class="bg-[#1A0B2E] w-100% h-20
+        border-b border-violet-950 border-t-0 border-l-0 border-r-0">
         <div class="h-20 flex items-center justify-around">
             <div>
                 <h1 class="text-white text-3xl font-bold">Tech<span class="text-transparent bg-clip-text 
@@ -28,20 +29,41 @@
                 <img src="./assets/ArrowRight.png">
             </div>
         </div>
-        <hr>
     </header>
 
     <!-- Banner -->
-    <section class="bg-[url(.assets/hero-bg.png)]">
-        <div>
-            <h1>TechWave</h1>
-            <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
+    <section class="w-100% h-190 bg-[url(./assets/hero-bg.png)] bg-size-[auto_100%] bg-center">
+        <div class="h-135 flex items-center justify-center relative">
+            <div class="absolute z-0">
+                <img src="./assets/hero-circle.png">
+                <div class="absolute top-3 right-14">
+                    <h4 class="p-1 pl-2 pr-2 rounded-3xl text-sm font-semibold bg-[#00FF88]">NEW</h4>
+                </div>
+            </div>
+            <div class="absolute z-10">
+                <img src="./assets/microphone.png">
+            </div>
         </div>
-        <div>
-            <button><img src="./assets/spotify.png">Listen On Spotify</button>
-
-            <button><img src="./assets/message.png">Subscribe</button>
+        
+        <div class="flex flex-col items-center justify-center text-white">
+            <h1 class="text-6xl font-semibold">TechWave</h1>
+            <p class="p-1 text-sm font-thin text-justify">Your daily dose of tech insights, productivity hacks, and personal
+                growth</p>
         </div>
+        <div class="text-white flex items-center justify-center gap-2">
+            <div class="flex items-center justify-center gap-2 text-xs p-2 pl-3 rounded-3xl w-38
+                bg-linear-to-tr from-yellow-400 from-10% via-pink-500 to-purple-600 
+                transition delay-150 duration-300 ease-in-out hover:scale-110 cursor-pointer">
+                <img src="./assets/spotify.png">
+                <button>Listen On Spotify</button>
+            </div>
+            <div class="flex items-center justify-center gap-2 text-xs p-2 pl-3 rounded-3xl w-30
+                border border-[#00FF88]
+                transition delay-150 duration-300 ease-in-out hover:scale-110 cursor-pointer">
+                <img src="./assets/message.png">
+                <button>Subscribe</button>
+            </div>
+        </div>    
     </section>
 
     <!-- About the podcast -->
